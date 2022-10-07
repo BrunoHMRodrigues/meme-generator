@@ -1,8 +1,38 @@
+.container {
+    margin: auto;
+    width: max-content;
+}
+
 #section-input-text {
     width: max-content;
+    margin: auto;
+}
+#meme-insert{
+    width: max-content;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#meme-image-container {
+    position: relative;
+    margin-top: 20px;
+    width: max-content;
+    margin: auto;
 }
 #meme-text {
     width: 100px;
     height: 1em;
     background-color: aqua;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+#display-image {
+    width: 400px;
+    height: 225px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+  }
