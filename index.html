@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-        <section id="section-input-text">
-            <input id="text-input" type="text" maxlength="60">
-        </section>
-        <section class="container">
-            <input type="file" name="" id="meme-insert">
-        </section>
+    <section id="title-page">
+        <h1>Meme Generator</h1>
+    </section>
+
+    <section id="section-input-text">
+        <input id="text-input" type="text" maxlength="60">
+    </section>
+    <section class="container">
+        <input type="file" name="" id="meme-insert">
+    </section>
 
     <section id="main">
-        <section id="meme-image-container" class="shadow">            
-            <div id="meme-image">
+        <section id="section-memes">
+            <img src="./imgs/meme1.png" alt="" id="meme-1" class="style-memes">
+            <img src="./imgs/meme2.png" alt="" id="meme-2" class="style-memes">
+            <img src="./imgs/meme3.png" alt="" id="meme-3" class="style-memes">
+            <img src="./imgs/meme4.png" alt="" id="meme-4" class="style-memes">
+        </section>
+
+        <section id="meme-image-container" class="shadow">
+            <!-- <div id="meme-image">
                 <div class="container">
                     <p id="meme-text"></p>
                 </div>
+            </div> -->
+            <div class="container">
+                <p id="meme-text"></p>
             </div>
+            <img src="" alt="" id="meme-image">
+            
         </section>
 
         <section id="section-buttons">
@@ -32,6 +49,7 @@
         </section>
     </section>
 
-        <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

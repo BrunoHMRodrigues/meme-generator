@@ -16,7 +16,7 @@ function insertImagePreview () {
      getImage.addEventListener("load", () => {
          const uploadedImage = getImage.result;
          const sectionPreview = document.getElementById("meme-image");
-         sectionPreview.style.backgroundImage = `url(${uploadedImage})`;
+         sectionPreview.src = uploadedImage;
      });
      getImage.readAsDataURL(this.files[0]);    
 }
@@ -48,3 +48,13 @@ function borderEarth (event) {
     memeDisplay.className = "earth";
 }
 buttonEarth.addEventListener("click", borderEarth);
+
+const imagesMemes = document.querySelector("#section-memes");
+
+function getMeme (event) {
+    const getMeme = event.target.src;
+    const sectionPreview = document.getElementById("meme-image");
+
+    sectionPreview.src = getMeme;
+}
+imagesMemes.addEventListener("click", getMeme);
